@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>The Art of Amateur</title>
+</head>
+
+<body>
+  <!--  NAVIGATION BAR  -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__links" id="navbar__logo">A.o.A.</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="paintings.html" class="navbar__links" id="paintings-page">Paintings</a>
+        </li>
+        <li class="navbar__item">
+          <a href="background.html" class="navbar__links" id="about-page">Background</a>
+        </li>
+        <li class="navbar__item">
+          <a href="contact.html" class="navbar__links" id="contact-page">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!--  CONTACT ME SECTION  -->
+  <div class="contact">
+    <h1 class="contact-heading">Need a custom painting? Forgot to get an anniversary gift for your someone special?</h1>
+    <div class="contactme">
+      <form action="action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname" STYLE="font-family: 'Cinzel Decorative', serif">First Name:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..." STYLE="font-family: courier">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname" STYLE="font-family: 'Cinzel Decorative', serif">Last Name:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..." STYLE="font-family: courier">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country" STYLE="font-family: 'Cinzel Decorative', serif">Country:</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country" STYLE="font-family: courier">
+              <option value="canada" STYLE="font-family: courier">Canada</option>
+              <option value="australia" STYLE="font-family: courier">Australia</option>
+              <option value="usa" STYLE="font-family: courier">USA</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject" STYLE="font-family: 'Cinzel Decorative', serif">Description of your Request:</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="A pretty tree..."
+              style="height:200px; font-family: courier"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <a href="#">
+            <input type="submit" value="Submit">
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/b6b65e283f.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
